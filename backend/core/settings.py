@@ -40,6 +40,7 @@ DJANGO_APPS = [
 ]
 
 PROJECT_APPS = [
+    'apps.shared',
     'apps.user',
     'apps.authentication',
     'apps.client',
