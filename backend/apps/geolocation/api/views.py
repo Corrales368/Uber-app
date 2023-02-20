@@ -5,7 +5,6 @@ from rest_framework import status
 
 # Import self app
 from .serializers import AddressGeolocationSerializer
-from ..utils import get_geocode_from_address
 
 
 class GeolocationAPIView(APIView):
