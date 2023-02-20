@@ -1,3 +1,8 @@
+# Import django
 from django.contrib import admin
 
-# Register your models here.
+# Import self app
+from .models import Service
+
+admin.site.register(Service)
+
