@@ -14,7 +14,6 @@ class AddressGeolocationSerializer(serializers.Serializer):
     def validate_address(self, value):
         # Get geocode address
         gmaps = GeoLocationGMaps()
-        gmaps.get_distance_matrix_from_coords(lat1=6.3237537, lng1=-75.55857870000001, lat2=6.3444097 , lng2=-75.5587506)
         geocode_result = gmaps.get_geocode_from_address(address= value)
 
         # If geocode_result is empty, then raise error
