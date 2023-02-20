@@ -138,3 +138,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'user.User'
+
+COST_PER_100_METERS = int(os.environ.get('COST_PER_100_METERS'))
+COST_PER_MINUTE = int(os.environ.get('COST_PER_MINUTE'))
